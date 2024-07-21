@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!--fontawosome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--css-->
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+    <!--navbar-->
+    <nav class="navbar  navbar-expand-lg p-5 mx-3">
+        <div class="container">
+            <a class="ms-5 navbar-brand" href="#">
+                <img src="./images/logo@2x.png" alt="Logo" width="70" height="38" class="d-inline-block pe-2">
+                <div class="logo-text d-inline-block ">
+                    <h1 class="site-title fs-6 mb-auto text-white">Weather</h1>
+                    <small class="site-description">tagline goes here</small>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav justify-content-end ms-auto me-5 ">
+                    <li class="nav-item px-2 ">
+                        <a class="nav-link  active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link " href="#">News</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link " href="#">Live cameras</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link " href="#">Photos</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link " href="#">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--search sec-->
+    <div class="hero" data-bg-image="images/banner.png" style="background-image: url(&quot;images/banner.png&quot;);">
+        <div class="container px-5">
+            <form class="find-location position-relative">
+                <input type="text" placeholder="Find your location..." id="search">
+                <input type="button" value="Find" id="submit">
+            </form>
+        </div>
+    </div>
+
+    <!--weather table-->
+    <div class="container px-5">
+        <div class="row">
+            <div class="card-group">
+                <!--today data-->
+                <div class="card" id="today">
+                    <div class="c-header p-2 rounded-start-1">
+                        <div class="day" id="dayT">Tuesday</div>
+                        <div class=" date" id="dateT"><span id="dateNumT">16</span><span id="dateMoT">July</span></div>
+                    </div>
+                    <div class="card-body text-start">
+                        <span id="locationTcountry" class="me-2">Egypt</span><p class="d-inline-block">,</p><div class="location d-inline-block ps-2 pe-4 " id="locationT">Cairo</div>
+                        <div class="degree" id="degreeT">
+                            <div class="num" id="tempT">29.2<sup>o</sup>C</div>
+                                <img src="" id="imgT" alt="" width="90">
+                        </div>
+                        <div class="custom" id="customT">Clear</div>
+                        <img src="images/icon-umberella.png"  alt=""><span id="umberellaT">20%</span>
+                        <img src="images/icon-wind.png"  alt=""><span id="windT">18km/h</span>
+                        <img src="images/icon-compass.png"  alt=""><span id="compassT">East</span>
+                    </div>
+                </div>
+                <!--tomorrow data-->
+                <div class="card tomorrow">
+                    <div class="c-header p-2">
+                        <div class="dayNext text-center float-none">Wednesday</div>
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="forecast-icon">
+                            <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" class="imgNext" alt="" width="48">
+                        </div>
+                        <div class="degreeNext fs-4 fw-bold text-white pt-3" >40.3<sup>o</sup>C</div>
+                        <small class="fs-6 tempNext" >26.8<sup>o</sup></small>
+                        <div class="customNext">Sunny</div>
+                    </div>
+                </div>
+                <!--after-tomorrow data-->
+                <div class="card after-tomorrow">
+                    <div class="c-header p-2">
+                        <div class="dayNext text-center float-none">Wednesday</div>
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="forecast-icon">
+                            <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" class="imgNext" alt="" width="48">
+                        </div>
+                        <div class="degreeNext fs-4 fw-bold text-white pt-3" >40.3<sup>o</sup>C</div>
+                        <small class="fs-6 tempNext" >26.8<sup>o</sup></small>
+                        <div class="customNext">Sunny</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--footer-->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <form action="#" class="subscribe-form">
+                        <input type="text" placeholder="Enter your email to subscribe...">
+                        <input type="submit" value="Subscribe">
+                    </form>
+                </div>
+                <div class="col-md-3 col-md-offset-1">
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-google"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="colophon">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </footer>
+
+
+    <!--js file-->
+    <script src="js/index.js"></script>
+    <!--bootstrap js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

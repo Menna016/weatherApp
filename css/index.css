@@ -1,0 +1,181 @@
+body {
+    background-color: #1e202b;
+    color: #bfc1c8;
+    font-family: "Roboto", "Open Sans", sans-serif;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.logo-text {
+    vertical-align: middle;
+}
+
+.site-description {
+    font-size: 0.7142857143em;
+    display: block;
+    color: #bfc1c8;
+}
+
+.hero {
+    background-size: cover;
+    padding: 70px 0;
+    min-height: 350px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    padding: 5px 25px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    color: white;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    font-weight: 400;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    border-color: #009ad8;
+    color: #009ad8;
+}
+
+.navbar-nav .nav-item .active {
+    border-color: #009ad8;
+    color: #009ad8;
+}
+
+.find-location input[type="text"] {
+    width: 100%;
+    padding: 20px 50px 20px 20px;
+    background: #1e202b;
+    color: white;
+}
+
+form input {
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.find-location input[type="button"] {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    padding: 0 40px;
+}
+
+input[type="button"] {
+    border: none;
+    background: #009ad8;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+}
+
+.card-group {
+    width: 100%;
+    overflow: hidden;
+    margin-top: -150px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+.c-header {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.day{
+    float: left;
+}
+ .date{
+    float: right;
+}
+.card {
+    background: #323544;
+    color: #bfc1c8;
+}
+
+
+.num{
+    font-size: 6.4285714286rem;
+    margin-right: 30px;
+    color: #ffff;
+    font-weight: 700;
+}
+.weather-icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+.custom {
+    color: #009ad8;
+    margin: 20px 0;
+}
+.customNext{
+    color: #009ad8;
+    margin: 20px 0;
+}
+.card-body span {
+    margin-right: 20px;
+}
+.tomorrow .card-body{
+    padding: 50px 20px 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.tomorrow .c-header{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.after-tomorrow .card-body{
+    padding: 50px 20px 10px; 
+}
+.site-footer {
+    background: #262936;
+    padding: 50px 0;
+}
+.site-footer .subscribe-form {
+    position: relative;
+    margin-bottom: 30px;
+}
+.site-footer .subscribe-form input[type="text"] {
+    padding: 20px 100px 20px 20px;
+    background: #1e202b;
+    width: 100%;
+    color: white;
+}
+.site-footer .subscribe-form input[type="submit"] {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+}
+.button, form input[type="submit"], form input[type="button"], form button, form input[type="reset"] {
+    border: none;
+    background: #009ad8;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+@media (min-width: 992px) {
+    .col-md-offset-1 {
+        margin-left: 8.3333333333%;
+    }
+}
+.site-footer .social-links a {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #1e202b;
+    color: #009ad8;
+    text-align: center;
+    line-height: 2;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    font-size: 20px;
+    font-size: 1.4285714286em;
+  }
+  .site-footer .social-links a:hover {
+    background: #009ad8;
+    color: white;
+  }
